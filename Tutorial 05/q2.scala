@@ -1,12 +1,12 @@
 object q2 extends App{
 
-    def printPrime(num:Int, x:Int=2):Unit={
+    def primeSeq(num:Int, x:Int=2):Unit={
         if(x<num){
             if(isPrime(x)){
                 print(x );
                 print(" ")
             }
-            printPrime(num,x+1);         
+            primeSeq(num,x+1);         
         }
         else{println("");}
     }
@@ -26,9 +26,9 @@ object q2 extends App{
         }
         else{false}     
     }
-    printPrime(10);
+    primeSeq(10);
 
     val input = scala.io.StdIn.readLine("Enter the number : ").toInt;
-    printPrime(input);
+    primeSeq(input);
 }
 
