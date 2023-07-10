@@ -1,5 +1,5 @@
 object q1 extends App{
-    def isPrime(num :Int , x:Int =2):String = {
+    def Prime(num :Int , x:Int =2):String = {
 
         if(num==1){return ("False");}
         if(x<=num){
@@ -10,17 +10,17 @@ object q1 extends App{
                 return ("True");
             }
             else{
-                isPrime(num,x+1);
+                Prime(num,x+1);
             }
         }
         else { "" }
     }
 
-    println(isPrime(5));
-    println(isPrime(8));
+    println(Prime(5));
+    println(Prime(8));
 
     val input = scala.io.StdIn.readLine("Enter an integer number : ").toInt;
-    print(isPrime(input));
+    print(Prime(input));
 
 
 }
